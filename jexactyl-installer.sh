@@ -102,13 +102,13 @@ sudo nano /etc/nginx/sites-available/panel.conf
 # Cole o seguinte texto no arquivo criado e substitua <domain> pela URL do site:
 # server {
 #     listen 80;
-#     server_name <domain>;
+#     server_name ${site_url};
 #     return 301 https://$server_name$request_uri;
 # }
 # 
 # server {
 #     listen 443 ssl http2;
-#     server_name <domain>;
+#     server_name ${site_url};
 # 
 #     root /var/www/jexactyl/public;
 #     index index.php;
